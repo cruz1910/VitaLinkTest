@@ -44,7 +44,7 @@ public class ConvenioService {
         return convenioRepository.findByAtivoTrue();
     }
     
-    public List<Convenio> buscarPorNome(String termoBusca) {
+    public List<Convenio> buscarPorNomeParcial(String termoBusca) {
         return convenioRepository.findByNomeContainingIgnoreCase(termoBusca);
     }
     

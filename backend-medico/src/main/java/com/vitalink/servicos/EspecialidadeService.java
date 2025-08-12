@@ -40,7 +40,7 @@ public class EspecialidadeService {
         return especialidadeRepository.findAllByOrderByNomeAsc();
     }
     
-    public List<Especialidade> buscarPorNome(String termoBusca) {
+    public List<Especialidade> buscarPorNomeParcial(String termoBusca) {
         return especialidadeRepository.findByNomeContainingIgnoreCase(termoBusca);
     }
     
